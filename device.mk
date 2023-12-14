@@ -10,6 +10,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from sm6150-common
 $(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)
 
+# MiuiCamera
+TARGET_CAMERA_USES_NEWER_HIDL_OVERRIDE_FORMAT := true
+TARGET_USES_MIUI_CAMERA := true
+TARGET_INCLUDES_MIUI_CAMERA := true
+$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.primary.sm6150 \
