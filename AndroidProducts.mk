@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The blazeOS Project
+# Copyright (C) 2021 The lineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/blaze_davinci.mk
+    $(LOCAL_DIR)/lineage_davinci.mk
 
 COMMON_LUNCH_CHOICES := \
-    blaze_davinci-user \
-    blaze_davinci-userdebug \
-    blaze_davinci-eng
+    lineage_davinci-user \
+    lineage_davinci-userdebug \
+    lineage_davinci-eng

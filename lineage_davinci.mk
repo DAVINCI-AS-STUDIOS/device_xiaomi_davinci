@@ -12,26 +12,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := blaze_davinci
+PRODUCT_NAME := lineage_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9T
 PRODUCT_MANUFACTURER := Xiaomi
 
-# ProjectBlaze
-BLAZE_BUILD_TYPE := OFFICIAL
-BLAZE_MAINTAINER := Jezzay97
-TARGET_UDFPS_ANIMATIONS := true
-TARGET_INCLUDE_PIXEL_LAUNCHER := true
+# Matrixx Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_AOSP_RECOVERY := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_CALL_RECORDING := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-WITH_GAPPS := true
+TARGET_HAS_UDFPS := true
+MATRIXX_MAINTAINER := Jezzay97
+MATRIXX_CHIPSET := SD720
+MATRIXX_BATTERY := 4000mah
+MATRIXX_DISPLAY := 1080x2340
+
+WITH_GMS := true
+BUILD_GOOGLE_CONTACTS := true
+BUILD_GOOGLE_DIALER := true
+BUILD_GOOGLE_MESSAGE := true
 
 PRODUCT_SYSTEM_NAME := davinci
 
